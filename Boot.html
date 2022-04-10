@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav Bar</title>
+    <style>
+        body {}
+        
+        [data-tooltip] {
+            position: relative;
+        }
+        
+        [data-tooltip]:hover::before {
+            content: attr(Data-tooltip);
+            position: absolute;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: .25rem;
+            justify-content: center;
+            top: 0.25rem;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button data-tooltip="Tooltip Text">Hover Me</button>
+
+</body>
+
+</html>
